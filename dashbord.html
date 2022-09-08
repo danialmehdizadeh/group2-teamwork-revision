@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>داشبورد</title>
+      <title>Dashbord</title>
    </head>
    <body>
       <nav>
@@ -92,60 +92,63 @@
             </article>
          </section>
          <section id="new-post">
-            <h3>ٔNew Post</h3>
+            <h3>New Post</h3>
             <form action="" method="post" name="post">
-            <label for="i-title">
-            Title
-            </label>
-            <input type="text" name="p-title" id="p-title">
-            <br>
-            <label for="">
-            Tags</label>
-            <input type="text" name="p-tags"id="p-tags" placeholder="Seperate different tags by comma e.g: Tag 1 , Tag 2 , ..">
-            <br>
-            <label for="">
-            Summary</label>
-            <input type="text" name="p-summary" id="p-summary" placeholder="Description">
-            <br>
-            <label for="i-file">
-            Feature image</label>
-            <input id="p-file" type="file" name="p-file">
-            <br>
-            <label for="p-parmalink">
-            Parmalink                </label>
-            <input type="text" id="p-parmalink" value="/">
-            <br>
-            <fieldset id="categories">
-               <legend>categories</legend>
-               <ul>
-                  <li>
-                     <input type="checkbox" name="sport" id="sport">Sports
-                     <ul>
-                        <li>
-                           <input type="checkbox" name="" id=""><label for="martial">Martial</label>
-                           <ul>
-                              <li><input type="checkbox" name="karate" id="karate"><label for="karate">karate</label></li>
-                              <li><input type="checkbox" name="kickboxing" id="kickboxing"><label for="kickboxing">kickboxing</label></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-            </fieldset>
-            <label for="content">
-            Content
-            <textarea name="post" id="p-content" cols="30" rows="10" placeholder="Post Context"></textarea>
-            </label>
-            <fieldset>
-               <label for="future">In future<label><input type="radio" name="dt" id="future">
-               <br><label>Date</label><input type="date" name="date" id="date">
-               <br><input type="time" name="time" id="time"><label>time</label>
-               <br>
-               <input type="radio" name="dt" id="now" checked> <label for="now">now</label>
-            </fieldset>
+				<label for="p-title">
+				Title
+				</label>
+				<input type="text" name="p-title" id="p-title">
+				<br>
+				<label for="p-tags">
+				Tags</label>
+				<input type="text" name="p-tags" id="p-tags" placeholder="Seperate different tags by comma e.g: Tag 1 , Tag 2 , ..">
+				<br>
+				<label for="">
+				Summary</label>
+				<input type="text" name="p-summary" id="p-summary" placeholder="Description">
+				<br>
+				<label for="p-file">
+				Feature image</label>
+				<input id="p-file" type="file" name="p-file">
+				<br>
+				<label for="p-parmalink">
+				Parmalink</label>
+				<input type="text" id="p-parmalink" value="/">
+				<br>
+				<fieldset id="categories">
+				   <legend>categories</legend>
+				   <ul>
+					  <li>
+						 <input type="checkbox" name="sport" id="sport">Sports
+						 <ul>
+							<li>
+							   <input type="checkbox" name="martial" id="martial"><label for="martial">Martial</label>
+							   <ul>
+								  <li><input type="checkbox" name="karate" id="karate"><label for="karate">karate</label></li>
+								  <li><input type="checkbox" name="kickboxing" id="kickboxing"><label for="kickboxing">kickboxing</label></li>
+							   </ul>
+							</li>
+						 </ul>
+					  </li>
+				   </ul>
+				</fieldset>
+				<label for="content">
+				Content
+				<textarea name="post" id="p-content" cols="30" rows="10" placeholder="Post Context"></textarea>
+				</label>
+				<fieldset>
+				   <label for="future">In future<label><input type="radio" name="dt" id="future">
+				   <br><label>Date</label><input type="date" name="date" id="date">
+				   <br><input type="time" name="time" id="time"><label>time</label>
+				   <br>
+				   <input type="radio" name="dt" id="now" checked> <label for="now">now</label>
+				</fieldset>
+				<input type="submit" value="submit">
+			</form>
          </section>
       </main>
       <aside>
+	  <h3>Aside menu</h3>
          <ul>
             <li>
                <a href="">Posts</a>
@@ -157,7 +160,7 @@
             </li>
             <li><a href="#">Extensions</a></li>
             <li><a href="#">Settings</a></li>
-         </ul>
+         </ul>---
       </aside>
       <footer>
          <p>All rights reserved.</p>
