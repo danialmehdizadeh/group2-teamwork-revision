@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashbord</title>
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li><a href="#">Dashbrd</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">View Website</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Log out</a> </li>
+         </ul>
+      </nav>
+      <main>
+         <section>
+            <h1>Dashbord</h1>
+            <p>Here you can customize your website, add new posts and enjoy a good-looking dashbord page.</p>
+            <a href="#new-post">New Post</a>    
+         </section>
+         <section>
+            <article>
+               <header>
+                  <h3>Instant Post</h3>
+               </header>
+               <form action="" method="post" name="i-post">
+                  <label for="i-title">
+                  Title</label>
+                  <input type="text" name="i-title" id="i-title">
+                  <br>
+                  <label for="i-tags">
+                  Tags                    </label>
+                  <input type="text" name="i-tags" id="i-tags" placeholder="Seperate different tags by comma e.g: Tag 1 , Tag 2 , ..">
+                  <br>
+                  <label for="i-summary">
+                  Description</label>
+                  <input type="text" name="i-summary" id="i-summary" placeholder="Summary">
+                  <br>
+                  <label for="i-content">
+                  Content
+                  </label><textarea name="post" id="i-content" cols="30" rows="10" placeholder="Content"></textarea>
+                  <br>
+                  <input type="submit" value="publish">
+               </form>
+            </article>
+            <article>
+               <header>
+                  <h3>Quote</h3>
+               </header>
+               <blockquote cite="https://www.brainyquote.com">
+                  <p>
+                     It always seems impossible until it's done.
+                  </p>
+                  <cite>Nelson Mandela</cite>
+               </blockquote>
+            </article>
+            <article id="latest-posts" >
+               <header>
+                  <h3>Latest Posts</h3>
+               </header>
+               <table border="3px" >
+                  <thead >
+                     <tr>
+                        <th>Title</th>
+                        <th>Published date</th>
+                        <th>Author</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Test 1</td>
+                        <td><time datetime="2022-8-23">2022-8-23</time></td>
+                        <td>admin</td>
+                     </tr>
+                     <tr>
+                        <td>Test 1</td>
+                        <td><time datetime="2022-8-23">2022-8-23</time></td>
+                        <td>admin</td>
+                     </tr>
+                     <tr>
+                        <td>Test 1</td>
+                        <td><time datetime="2022-8-23">2022-8-23</time></td>
+                        <td>admin</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </article>
+         </section>
+         <section id="new-post">
+            <h3>New Post</h3>
+            <form action="" method="post" name="post">
+				<label for="p-title">
+				Title
+				</label>
+				<input type="text" name="p-title" id="p-title">
+				<br>
+				<label for="p-tags">
+				Tags</label>
+				<input type="text" name="p-tags" id="p-tags" placeholder="Seperate different tags by comma e.g: Tag 1 , Tag 2 , ..">
+				<br>
+				<label for="">
+				Summary</label>
+				<input type="text" name="p-summary" id="p-summary" placeholder="Description">
+				<br>
+				<label for="p-file">
+				Feature image</label>
+				<input id="p-file" type="file" name="p-file">
+				<br>
+				<label for="p-parmalink">
+				Parmalink</label>
+				<input type="text" id="p-parmalink" value="/">
+				<br>
+				<fieldset id="categories">
+				   <legend>categories</legend>
+				   <ul>
+					  <li>
+						 <input type="checkbox" name="sport" id="sport">Sports
+						 <ul>
+							<li>
+							   <input type="checkbox" name="martial" id="martial"><label for="martial">Martial</label>
+							   <ul>
+								  <li><input type="checkbox" name="karate" id="karate"><label for="karate">karate</label></li>
+								  <li><input type="checkbox" name="kickboxing" id="kickboxing"><label for="kickboxing">kickboxing</label></li>
+							   </ul>
+							</li>
+						 </ul>
+					  </li>
+				   </ul>
+				</fieldset>
+				<label for="content">
+				Content
+				<textarea name="post" id="p-content" cols="30" rows="10" placeholder="Post Context"></textarea>
+				</label>
+				<fieldset>
+				   <label for="future">In future<label><input type="radio" name="dt" id="future">
+				   <br><label>Date</label><input type="date" name="date" id="date">
+				   <br><input type="time" name="time" id="time"><label>time</label>
+				   <br>
+				   <input type="radio" name="dt" id="now" checked> <label for="now">now</label>
+				</fieldset>
+				<input type="submit" value="submit">
+			</form>
+         </section>
+      </main>
+      <aside>
+	  <h3>Aside menu</h3>
+         <ul>
+            <li>
+               <a href="">Posts</a>
+               <ul>
+                  <li><a href="#">Post Archive</a></li>
+                  <li><a href="#">New Post</a></li>
+                  <li><a href="#">Comments</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Extensions</a></li>
+            <li><a href="#">Settings</a></li>
+         </ul>---
+      </aside>
+      <footer>
+         <p>All rights reserved.</p>
+      </footer>
+   </body>
+</html>
